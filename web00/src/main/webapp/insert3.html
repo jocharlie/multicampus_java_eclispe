@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+
+#b1 { /* #은 아이디 선택!, 특정한 것 한 개만 선택! */
+	color: red;
+}
+
+#b2 { /* #은 아이디 선택!, 특정한 것 한 개만 선택! */
+	color: blue;
+}
+
+
+</style>
+</head>
+<body>
+<!-- no, title, content, writer -->
+	<h3>상품등록 페이지</h3>
+	<hr>
+	<a href="product.html">
+		<button id="no">첫 페이지로</button>
+	</a>
+	
+	<form action="insert3.jsp"> 
+	
+	<table border="1">
+		<tr>
+			<td class="t1">아이디: </td>
+			<td>
+				<input name="id">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">name: </td>
+			<td>
+				<input name="name">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">content: </td>
+			<td>
+				<input name="content">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">price: </td>
+			<td>
+				<input name="price">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">company: </td>
+			<td>
+				<input name="company">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">img : </td>
+			<td>
+				<input name="img" type="file">
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" class="t1">    <!--  -->
+			<button id="b2">상품등록 데이터 전송</button>
+			</td> 
+		</tr>
+	</table>
+	<!--  입력한 값들이 서버(톰킷)으로 -->
+	</form>
+
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

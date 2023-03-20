@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: #18de02;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+
+#b1 { /* #은 아이디 선택!, 특정한 것 한 개만 선택! */
+	color: red;
+}
+
+#b2 { /* #은 아이디 선택!, 특정한 것 한 개만 선택! */
+	color: blue;
+}
+
+
+</style>
+</head>
+<body>
+<!-- no, title, content, writer -->
+	<h3>음악 페이지</h3>
+	
+	
+	<form action="insert5.jsp"> 
+	
+	<table border="1">
+		<tr>
+			<td class="t1">아이디: </td>
+			<td>
+				<input name="id">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">title: </td>
+			<td>
+				<input name="title">
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="t1">아티스트: </td>
+			<td>
+				<input name="artist">
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="t1">img: </td>
+			<td>
+				<input name="img">
+			</td>
+		</tr>
+		<tr>
+			<td class="t1">content: </td>
+			<td>
+				<input name="content">
+			</td>
+		</tr>
+		
+		
+		<tr>
+			<td colspan="2" class="t1">    <!--  -->
+			<button id="b2">음악 데이터 전송</button>
+			</td> 
+		</tr>
+	</table>
+	<!--  입력한 값들이 서버(톰킷)으로 -->
+	</form>
+
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
